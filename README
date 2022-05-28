@@ -1,0 +1,144 @@
+https://docs.google.com/document/d/1npuRT9i9G0dYNwyskIzIrjsXNlW4MQLhRXCNSbhr6u0/edit?usp=sharing
+
+
+Tarefa 7: Plano de Configuração de Software
+
+Objetivo: Aplicar conceitos de gestão de configuração de software
+
+Tarefa: Realize as seguintes atividades:
+
+1. Consulte os materiais disponíveis na página da disciplina no Classroom sobre gestão de configuração de software:
+
+1.1 Redija o documento Plano de Gestão de Configuração de Software, de acordo com o modelo disponível na página da disciplina junto a esta tarefa. Para isto:
+
+a) Estabeleça todos os itens de configuração de software que serão tratados, incluindo documentações, código fonte, especificações e planos relacionados ao projeto, etc
+	Será tratado neste documento apenas documentação.
+
+b) Defina os responsáveis da equipe por cada item de configuração de software
+	Ambos integrantes do grupo podem contribuir com ambas as coisas.
+
+c) Defina o fluxo de trabalho desde a solicitação de criação/alteração de um item de configuração de software até a sua realização, detalhando os responsáveis e as tarefas a serem realizadas (incluindo o uso de ferramentas de controle de versão)
+Reconhecida a necessidade de alguma modificação;
+Solicitada a modificação com o suporte;
+Encaminhado para o setor responsável para a análise de solicitações deste tipo;
+Caso não seja uma alteração viável será rejeitada(e para por aqui), caso seja viável será encaminhada para a equipe responsável pelo desenvolvimento;
+A equipe trabalha em cima da solicitação conforme sua metodologia e aloca a solicitação de acordo com sua prioridade comparada às outras funcionalidades que estão sendo trabalhadas;
+Assim que possível a modificação é trabalhada seguido de sua revisão, assim como atividades de garantia de qualidade e testes;
+Modificações são incluídas na próxima versão a ser construída e entregues assim que possível.
+Para versionamento podemos utilizar ferramentas ótimas como git, criando branches separadas para cada nova iteração, seguindo padrões da indústria na nomenclatura de versionamento.
+
+1.2. Edite todas as informações no modelo de Plano de Gestão de Configuração de Software disponível na página da disciplina
+
+1.3. Cadastre todas as atividades na ferramenta de gestão de projeto adotada pela equipe e disponibilize todo o material existente do projeto até agora no repositório git da equipe.
+
+
+
+1.0 Introdução
+Este plano de configuração de software pretende organizar as atividades de controle de configuração de software de forma a garantir a melhor qualidade possível no produto desenvolvido, tanto em seu desenvolvimento quanto em interações futuras como manutenção e incremento de funcionalidades.
+
+1.1 Escopo e objetivo das atividades de SCM
+Este documento descreve as atividades a serem seguidas para garantia de qualidade no controle de configuração de software, tendo como objetivo principal manter a qualidade de todo o projeto a mais alta possível seguindo todas as etapas necessárias para o seu desenvolvimento.
+
+1.2 Papel organizacional da SCM
+Devido ao cenário atual da equipe e por se tratar de um trabalho de âmbito acadêmico, o gerenciamento de configuração será tratado pelo grupo de trabalho definido no semestre, atualmente contando com dois integrantes. A documentação deve ser feita corretamente por ambos para evitar problemas futuros em comunicação no projeto, mantendo um melhor controle do estado atual do mesmo.
+
+2.0 Tarefas de SCM
+Nessa seção, serão tratadas as informações referente às tarefas importantes de SCM.
+
+2.1 Identificação
+	A documentação deve ser feita seguindo padrões estabelecidos pela equipe para que toda a comunicação seja mais simples e facilitada a ponto de muitos detalhes serem percebidos intuitivamente.
+	Nesse caso a identificação dos artefatos deverá ser feita seguindo os padrões apresentados no plano de gerenciamento exemplo, disponibilizado na disciplina, onde. Os nomes devem ser em maiúsculo utilizando “_” no lugar de espaços, exemplo: “EXEMPLO_DOCUMENTO”.
+	Seguido pela data no formato DDMMAAAA, exemplo: “EXEMPLO_DOCUMENTO_01121999”.
+	Seguindo regras definidas para maior organização:
+Nomes com até 50 caracteres;
+Pode-se opcionalmente adicionar o campo de descrição;
+Todas as letras no nome devem ser maiúsculas;
+Os arquivos serão nomeados com seus nomes completos descrevendo os pacotes seguidos por ponto “.” e o nome de sua classe.
+A tabela de classes será utilizada conforme disponibilizada no exemplo, segue a seguir a reprodução da mesma.
+
+
+2.1.1 Descrição
+Documentação:
+	Esta tarefa consiste em documentar cada etapa e artefato de forma a ser facilitado o entendimento de diversas partes do projeto de forma muito mais simples, também servindo como base para iterações a serem desenvolvidas.
+
+2.1.2 Produtos e documentações do trabalho
+	Inicialmente este documento é produzido, seguido por alguns exemplos de artefatos que podem ser produzidos de acordo com requisitos
+
+2.2 Controle de Configuração
+	Versões novas serão identificadas pelo seu nome, visto que a documentação exige data em sua nomenclatura.
+
+2.2.1 Descrição
+	O controle é feito seguindo a necessidade do projeto, primeiro identificando o que deverá ser feito, em seguida adequando essa necessidade ao modelo de controle. Por fim, a necessidade é tratada e são produzidos artefatos correspondentes a ela.
+
+
+
+
+2.2.2 Descrição da tarefa de controle de configuração
+As tarefas são várias, desde documentação até revisão, mas todas têm algo em comum. Todas as tarefas visam a melhor entrega possível ao cliente dentro da qualidade desejada e esperada do software.
+
+2.2.3 Produtos e documentação do trabalho
+Cada tarefa terá um artefato gerado a partir da mesma, a documentação terá documentado os casos de uso, requisitos, regras de negócio, regras da equipe, etc. Cada reunião, alteração, retrabalho ou adição de algum conteúdo ao projeto se dá por meio de várias etapas que passam por validações e são documentadas para uso posterior.
+
+2.3 Controle de versões
+Será utilizado o versionamento de acordo com o descrito no exemplo disponibilizado, no formato <XX>, <YY> e <ZZ>.
+Desta forma a entrega do projeto segue em uma ordem cronológica onde conseguimos identificar com maior facilidade o momento atual do mesmo e até alterações que já ocorreram de forma mais generalizada.
+
+2.3.1 Descrição
+XX: Inicia com “01” e só é alterado se ocorrer alguma mudança substancial nos requisitos.
+YY: Inicia com “00”, sempre volta ao “00” quando o <XX> é alterado, é incrementado conforme são produzidas novas funcionalidades ao projeto.
+ZZ: Inicia com “00”, sempre volta ao “00” quando <XX> ou <YY> são alterados, é incrementado sempre que é produzida uma nova release para correção de release anteriores ( XX e YY ).
+
+2.3.2 Descrição da tarefa i de controle de versão
+A tarefa de documentação de requisitos é alocada e a equipe responsável é selecionada, os dados são retirados conforme as reuniões com o cliente e tratados para se criar uma boa base de requisitos que irão suprir as necessidades dos clientes.
+
+2.3.3 Produtos e documentos do trabalho
+A documentação de requisitos gera vários artefatos, sendo eles:
+Requisitos funcionais e não funcionais;
+Estórias de usuários;
+Diagramas de casos de uso;
+Diagramas de sequência;
+Entre outros que a equipe de desenvolvimento decidir serem necessários.
+
+2.4 Comunicação do status das configurações (CSA)
+Cada membro tem acesso a ferramenta utilizada pela equipe para gestão do projeto, sendo de responsabilidade de cada um diariamente se atualizar das informações referentes ao projeto.
+Essa comunicação pode ocorrer individualmente conforme a disponibilidade ou de forma mais ampla sendo enviada aos membros da equipe por email, mensagem ou pela ferramenta de gestão. Deixando também um espaço para dúvidas individuais ou reuniões com a equipe para informar e debater.
+
+2.4.1 Descrição
+Cada alteração no SCI deve ser criada uma nova entrada no relatório SCA, nesse caso sendo de responsabilidade do grupo todo.
+
+2.4.2 Produtos e documentações do trabalho
+Principalmente o relatório gerado com base no SCI, mas também outros documentos relacionados às reuniões posteriores com sugestões ou críticas para futuras alterações.
+
+2.5 Auditorias e revisões
+O documentador responsável deve verificar o projeto na finalização de cada etapa do mesmo, a fim de garantir a integridade do produto que está sendo produzido.
+
+2.5.1 Descrição
+A cada etapa concluída do projeto é verificado se o processo de gerência e configuração estão aplicados corretamente.
+Também deve ser avaliado se a modificação solicitada ocorreu sem alteração de outros elementos de forma consequente.
+É feita uma revisão formal para avaliar a correção técnica.
+Deve-se verificar se a modificação está corretamente especificada.
+Deve-se verificar se o projeto segue corretamente os procedimentos de SCM e se todos os SCIs foram modificados de acordo com as alterações para evitar problemas de integridade.
+
+2.5.2 Produtos e documentação de trabalho
+	Com a auditoria é levantado um relatório completo sobre o que foi produzido, podendo também trazer pontos onde é necessário alguma alteração, pontos onde ocorre alguma interferência com outra parte do programa, etc.
+
+2.6 Coleta de dados e avaliação
+Os artefatos são produzidos e datados, cada nova alteração vai modificar algum atributo no mesmo, que pode ser observado para verificar que houve alguma alteração e, dependendo da ferramenta de gestão, podemos observar com muita facilidade a alteração que foi feita.		
+
+3.0 Padrões, Práticas e Convenções (Standards, Practices and Conventions - SPC)
+	Serão utilizados os padrões descritos neste documento, com o objetivo principal de garantir a qualidade do software produzido.
+	Seguindo padrões para nomenclatura, desenvolvimento, documentação, revisão e entrega do projeto.
+
+4.0 Recursos para SCM
+Basicamente os recursos de mão de obra são os integrantes do grupo, com o uso do whatsapp como ferramenta de comunicação adicional.
+	Os recursos de hardware serão os computadores disponíveis no campus e computadores pessoais dos integrantes.
+	Em questão de software será utilizado o GITHUB como ferramenta principal por sua funcionalidade extraordinária neste meio. Com o uso de Visual Paradigm Online para elaboração de diagramas.
+	As ferramentas de produção de software não foram completamente definidas a ponto de serem descritas aqui, por exemplo não foi definido o banco de dados, a linguagem para construção da interface gráfica, entre outros.
+
+5.0 Ferramentas, Técnicas e Métodos SCM
+	Com o auxílio do GITHUB será possível uma gestão mais facilitada de versionamento, alterações, entre outros.	
+	Dessa forma podemos nos preocupar e desempenhar mais tempo em questões relacionadas às técnicas e métodos para elaboração, serão seguidos os métodos e técnicas descritas neste documento, conforme estudado na disciplina com revisões formais, regras para documentação, versionamento, entre outros.
+
+6.0 Apêndices
+	Este documento foi desenvolvido baseando-se em exemplos disponibilizados em aula, boa parte dele é composto por dados fornecidos nestes outros documentos.
+	
